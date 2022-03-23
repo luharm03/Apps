@@ -1,0 +1,151 @@
+$font-stack: 'Libre Franklin', sans-serif;
+$primary-color: #131313;
+$secondary-color: #cecece;//b3b3b3
+$align: center;
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  text-align: $align;
+  height: 100%;
+  
+}
+a{
+  text-decoration: none;
+}
+.header{
+  background-color: $secondary-color;
+  color: $primary-color;
+  padding:  2% 1% 5%;
+  width:  98%;
+  height: 2px;
+  .header-left{
+    float: left;
+  }
+  .logo{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .header-right{
+    float:right;
+  }
+  .menu {
+    padding: 5px 10px;
+    color: $primary-color;
+    margin: 2px;
+    text-decoration-style:none;
+  } 
+  .menu:hover{
+    color:white;
+    background-color:#b3b3b3;
+    border-radius: 2px;
+  }
+}
+
+.main{
+  .slider{
+    width: 100%;
+    img {
+     width: 100%;
+    }
+  }
+  .list{
+    background-color:#fafafa;
+    color:#818181;
+    padding: 2% 0;
+    text-align: center;
+    button{
+      background-color:#448aff;
+      color:#fff;
+      border-color: #448aff;
+      box-shadow: none;
+      padding: 5px;
+      border-radius: 2px;
+    }
+    table{
+      text-align: center;
+      width: 100%;
+      td{
+        text-align: left;
+      }
+    }
+  }
+  .article{
+    position: relative;
+    color:#818181;
+    width: 100%;
+    height: auto;
+    img{
+      float: left;
+      width: 50%;
+    }
+    button{
+      background-color:#448aff;
+      color:#fff;
+      border-color: #448aff;
+      box-shadow: none;
+      padding: 5px;
+      border-radius: 2px;
+    }
+  }
+  
+}
+
+.footer{
+  bottom: 0;
+  float: left;
+  width: 100%;
+  position:inherit;
+  background-color: $secondary-color;
+  color: $primary-color;
+  padding:  2% 1% 5%;
+  width:  98%;
+  .footer-left{
+    float: left;
+  }
+  .logo{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .footer-right{
+    float:right;
+  }
+  .menu {
+    padding: 10px;
+    color: $primary-color;
+    margin: 2px;
+    text-decoration-style:none;
+  }
+  .menu:hover{
+    color:white;
+  }
+}
+.mobile{
+  display: none;
+}
+@media screen and (max-width: 468px) {
+  .mobile{
+   float: right;
+   display: block;
+  }
+  
+ .header{
+  .menu {
+    display: none;
+  }
+  .nav.header-right {
+    float: right;
+    z-index: 1;
+    .menu {
+      
+      display: block;
+    }
+  }
+ }
+ .main{
+   .article{
+    img{
+      float: none;
+    }
+   }
+ }
+}
